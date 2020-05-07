@@ -12,6 +12,36 @@
 				-webkit-text-size-adjust: 100%;
 				-ms-text-size-adjust: 100%;
 			}
+			@media only screen and (max-width: 760px) {
+				table[class=device-width] {
+					width: 440px!important;
+				}
+				table[class=device-inner] {
+					width: 400px!important;
+				}		
+				table[class=device-border] {
+					width: 400px!important;
+					border-right-width: 0!important;
+					padding-right: 15px!important;
+					padding-left: 15px!important;
+					text-align: center!important;
+				}	
+			}
+			@media only screen and (max-width: 500px) {
+				table[class=device-width] {
+					width: 300px!important;
+				}
+				table[class=device-inner] {
+					width: 280px!important;
+				}		
+				table[class=device-border] {
+					width: 280px!important;
+					border-right-width: 0!important;
+					padding-right: 0!important;
+					padding-left: 0!important;
+					text-align: center!important;
+				}	
+			}
 		</style>
 	</head>
 	<body>
@@ -19,12 +49,12 @@
 			<tbody>
 				<tr>
 					<td width="100%">
-						<table width="680px" bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" align="center">
+						<table width="680px" bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" align="center" class="device-width">
 							<tbody>
 								<tr>
 									<td>
 									<!--logo-сделала align="center" у таблицы чтобы встало прямо по центру, td не работает почему-то-->
-										<table width="560px" cellspacing="0" cellpadding="0" border="0"  align="center">
+										<table width="560px" cellspacing="0" cellpadding="0" border="0"  align="center" class="device-inner">
 											<tbody>
 												<tr>
 													<td align="center" style="padding-top: 43px; padding-bottom: 24px;">
@@ -34,7 +64,7 @@
 											</tbody>
 										</table>
 									<!--title-сделала align="center" у таблицы чтобы встало прямо по центру, td не работает почему-то-->
-										<table width="560px" cellspacing="0" cellpadding="0" border="0"  align="center">
+										<table width="560px" cellspacing="0" cellpadding="0" border="0"  align="center" class="device-inner">
 											<tbody>
 												<tr>
 													<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;font-weight: 400;  line-height: 20px; color: #4A5566; padding: 20px; padding-bottom: 16px;">Hi Candy 👋<br>Good news for your wallet</td>
@@ -42,16 +72,16 @@
 											</tbody>
 										</table>
 									<!--COUPON-->
-									<table width="560px" cellspacing="0" cellpadding="0" border="0"  align="center" bgcolor="#F8F8FA"  style= "padding-top: 24px; padding-bottom: 24px;">
+									<table width="560px" cellspacing="0" cellpadding="0" border="0"  align="center" bgcolor="#F8F8FA"  style= "padding-top: 24px; padding-bottom: 24px;" class="device-inner">
 										<tbody>
 											<tr>
 												<td>
-													<table width="512" align="center" cellspacing="0" cellpadding="0" border="0">
+													<table width="512" align="center" cellspacing="0" cellpadding="0" border="0" class="device-inner">
 														<tbody>
 															<tr>
 																<td>
 																	<!--COUPON LEFT-->
-																	<table height="128"  width="160" cellspacing="0" cellpadding="0" align="left"  style="border-right-width: 4px; border-right-style: dashed; border-right-color: #8492A6;text-align: center;">
+																	<table height="128"  width="160" cellspacing="0" cellpadding="0" align="left"  style="border-right-width: 4px; border-right-style: dashed; border-right-color: #8492A6;text-align: center;" class="device-border">
 																	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #4A5566;padding:20px;padding-bottom: 4px;">Coupon:</td>
 																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 50px;font-weight: 400;  line-height: 57px; color: #4A5566; padding: 20px;">50%<sup style="font-size: 21px; line-height: 28px;">off</sup></td></tr>
 																	<tr><td>
@@ -67,7 +97,7 @@
 																	</tbody>
 																</table>
 																<!--COUPON RIGHT-->
-																<table cellspacing="0" cellpadding="0"   align="left" width="327" height="128">
+																<table cellspacing="0" cellpadding="0" align="left" width="327" height="128"  class="device-border">
 																	<tbody>
 																		<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 20px; line-height: 28px; color:#8492A6; display: inline-block; padding:31px;padding-left: 24px;padding-right: 24px;">Enter the code <a style="text-decoration: none; color:#0052E2;">blkfridy-2019v3</a> when you spend $120 to enjoy the discount on your next purchase.</td></tr>
 																	</tbody>
@@ -81,7 +111,7 @@
 										</tbody>
 									</table>
 									<!--TEXT UNDER COUPON-->
-									<table width="560" cellpadding="0" cellspacing="0" align="center">
+									<table width="560" cellpadding="0" cellspacing="0" align="center" class="device-inner">
 										<tbody>
 											<tr>
 												<td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;line-height: 16px; color: #4A5566;padding-top:16px;">* To use before December 30, 2020</td>
@@ -89,7 +119,7 @@
 										</tbody>
 									</table>
 <!--EMPTY SPACE-->
-<table height="95" width="560" cellpadding="0" cellspacing="0" align="center">
+<table height="95" width="560" cellpadding="0" cellspacing="0" align="center" class="device-inner">
 	<tbody>
 <tr>
 	<td></td>
@@ -97,7 +127,7 @@
 </tbody>
 </table>
 <!--FOOTER-->
-<table  width="560" cellpadding="0" cellspacing="0" align="center" style="padding-top: 16px; border-top-color: #EDEDF2; border-top-style: solid; border-top-width: 1px;">
+<table width="560" cellpadding="0" cellspacing="0" align="center" style="padding-top: 16px; border-top-color: #EDEDF2; border-top-style: solid; border-top-width: 1px;"  class="device-inner">
 <tbody>
 <tr>
 	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;line-height: 16px; color: #8492A6;">
@@ -106,7 +136,7 @@
 </tr>
 </tbody>
 </table>
-<table  width="560" cellpadding="0" cellspacing="0" align="center" style="padding-top: 22px;">
+<table  width="560" cellpadding="0" cellspacing="0" align="center" style="padding-top: 22px;"  class="device-inner">
 <tbody>
 <tr>
 	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;line-height: 16px; color: #8492A6;padding-bottom: 30px;">© 2019 Craftingemails. All rights reserved</td>
@@ -122,54 +152,353 @@
 			</tbody>
 		</table>
 
-
-
-
-
-<!-- <tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;font-weight: 400;  line-height: 20px; color: #4A5566; padding: 20px; padding-bottom: 50px;">Hi Candy 👋<br>Thanks for signing up. We’re thrilled to have you on board.</td>
+<!--horizontal line separate-->
+<hr width="90%" color="0052E2" align="center" size="5">
+<!--letter with smiles and employee photo-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Coupon Email Template</title>
+		<style>
+			body {
+				padding:0;
+				margin: 0;
+				width: 100%!important;
+				-webkit-text-size-adjust: 100%;
+				-ms-text-size-adjust: 100%;
+			}
+			@media only screen and (max-width: 760px) {
+				table[class=device-width] {
+					width: 440px!important;
+				}
+				table[class=device-inner] {
+					width: 400px!important;
+				}		
+				table[class=device-border] {
+					width: 400px!important;
+					border-right-width: 0!important;
+					padding-right: 15px!important;
+					padding-left: 15px!important;
+					text-align: center!important;
+				}	
+			}
+			@media only screen and (max-width: 500px) {
+				table[class=device-width] {
+					width: 300px!important;
+				}
+				table[class=device-inner] {
+					width: 280px!important;
+				}		
+				table[class=device-border] {
+					width: 280px!important;
+					border-right-width: 0!important;
+					padding-right: 0!important;
+					padding-left: 0!important;
+					text-align: center!important;
+				}	
+			}
+		</style>
+	</head>
+	<body>
+		<table border="0" cellpadding="0" cellspacing="0" bgcolor="#F2F2F2" width="100%">
+			<tbody>
+				<tr>
+					<td width="100%">
+						<table width="680px" bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" align="center" class="device-width">
+							<tbody>
+								<tr>
+									<td>
+									<!--logo-сделала align="center" у таблицы чтобы встало прямо по центру, td не работает почему-то-->
+										<table width="560px" cellspacing="0" cellpadding="0" border="0"  align="center" class="device-inner">
+											<tbody>
+												<tr>
+													<td align="center" style="padding-top: 43px; padding-bottom: 24px;">
+														<img src="/Users/anastasia/Desktop/email/img/logo.png" alt="logo" width="100%" align="center" style="max-width: 143px;">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									<!--title-сделала align="center" у таблицы чтобы встало прямо по центру, td не работает почему-то-->
+<!--EMPTY SPACE-->
+<table height="5" width="560" cellpadding="0" cellspacing="0" align="center" class="device-inner">
+	<tbody>
+<tr>
+	<td></td>
+</tr>
+</tbody>
+</table>
+<!----smiles-->
+<table width="560" cellpadding="0" cellspacing="0" align="center" style="padding-top: 22px; padding-bottom: 22px;" class="device-inner">
+	<tbody>
+			<tr align="center">
+				<td align="" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;font-weight: 400;  line-height: 20px; color: #4A5566; padding: 20px; padding-bottom: 16px;">Hi Candy👌<br>Thank you for sending us your photo ID.<br>We've we confirmed your identity.</td>
 			</tr>
 			<tr>
+				<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;font-weight: 400;  line-height: 20px; color: #4A5566; padding: 20px; padding-bottom: 16px;">Are you satisfied with your verification process?</td>
+			</tr>
+			<tr style="width: 248;">
 				<td>
-					<a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 20px; color: #4A5566; background: #0052E2; border-radius: 4px;color: #ffffff; text-decoration: none;height: 56px; line-height: 56px; display: inline-block; padding-right: 32px; padding-left: 32px;">Yes keep me subscribed</a>
+					<table style= "width:248px;" align="center" >
+						<tbody>
+							<tr>
+								<td><a href=""><img src="img/emoji.png" alt="1" width="40" height="40"></a></td>
+								<td><a href=""><img src="img/emoji-1.png" alt="2" width="40" height="40"></a></td>
+								<td><a href=""><img src="img/emoji-2.png" alt="3" width="40" height="40"></a></td>
+								<td><a href=""><img src="img/emoji-3.png" alt="4" width="40" height="40"></a></td>
+								<td><a href=""><img src="img/emoji-4.png" alt="5" width="40" height="40"></a></td>	
+							</tr>
+						</tbody>
+					</table>
 				</td>
 			</tr>
-			<tr>
-				<td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400; line-height: 22px; color: #8492A6;">You can review the <a href="#" style="text-decoration: none; color:#0052E2;">full policies here</a>. Or read highlights below:</td>
-			</tr>
-			<tr>
-				<td style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;font-weight: 400;  line-height: 20px; color: #4A5566;">Introducing Our House Rules</td>
-			</tr>
-			<tr>
-				<td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400; line-height: 22px; color: #8492A6;">We've built a brand new section on craftingemails that will make easier to find the information from our legal terms and policies. mpre relevant for you. We're calling it Our House Rules because it covers all of your rights and responsibilities when you use our services and participate in the community.</td>
-			</tr>
-			<tr>
-				<td style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;font-weight: 400;  line-height: 20px; color: #4A5566;">Legal changes</td>
-			</tr>
-			<tr>
-				<td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400; line-height: 22px; color: #8492A6;">The terms and policies in Our House Rules make up a legally-binding agreement between you and craftingemails that spells out each party's rights and obligations when it comes to your use of our services. Here are the main changes to our previous agreement:</td>
-			</tr>
+		</tbody>
+	</table>
+<!--employee-->
+<table width="272" cellpadding="0" cellspacing="0" align="center" style="padding-top: 22px; padding-bottom: 24px; outline: firebrick solid 0;">
+	<tbody>
+		<tr>
+			<td>
+				<img src="img/card.png" alt="card" width="100%">
+			</td>
 			<tr>
 				<td>
-					<ul>
-						<li style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400; line-height: 22px; color: #8492A6;">Your contract with craftingemails: Users living in North or South America will continue to contract with craftingemails, Inc., but craftingemails users living elsewhere are now contracting with craftingemails Ireland, a subsidiary of craftingemails, Inc. You won't notice any difference in our services. We made this change to reflect the international nature of our business.</li>
-						<li style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: normal; line-height: 22px; color: #8492A6;">Charges: We've consolidated all of our terms related to seller fees and bills into a single Fees & Payments Policy. That policy also includes a link to our Direct Checkout Policy, which clarifies craftingemails's role in processing payments</li>
-					</ul>
+					<table width="100%" bgcolor="F8F8FA" cellpadding="0" cellspacing="0" align="center">
+						<tbody>
+							<tr>
+								<td align="center"  style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px; font-weight: bold; color: #4A5566; padding-top: 24px;">Buttercream</td>
+							</tr>
+							<tr>
+								<td align="center"  style="font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 22px; color: #4A5566;">Sales Consultant</td>
+							</tr>							
+							<tr align="center" style="padding-right: 24px; padding-left: 24px; padding-bottom:  24px; padding-top: 16px;">
+								<td align="center" width="224"  style="width:100%; font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: bold; background: #0052E2; border-radius: 4px;color: #ffffff; text-decoration: none;height: 32px; line-height: 32px; display: inline-block; ">Accept invitation</td>
+							</tr>
+						</tbody>
+					</table>
 				</td>
 			</tr>
-			<tr>
-				<td style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;font-weight: 400;  line-height: 20px; color: #4A5566;">Review your contact preferences</td>
-			</tr>
-			<tr>
-				<td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: normal; line-height: 22px; color: #8492A6;">We've updated our Privacy Policy to clarify that we may occasionally add new channels to share news or information with our users, but that we'll always make sure you can easily choose exactly what types of messages you want to receive (or don't want to receive).</td>
-			</tr>
-			<tr>
-				<td>
-					<a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;font-weight: 400;  line-height: 20px; color: #4A5566; background: #0052E2; border-radius: 4px;color: #ffffff; text-decoration: none;height: 32px; line-height: 32px; display: inline-block; padding-right: 12px; padding-left: 12px;">Yes keep me subscribed</a>
-				</td>
-			</tr>
-			<tr>
-				<td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: normal; line-height: 22px; color: #8492A6;">If you have any questions please write us: <br><a href="mailto:support@craftingemails.com" style="text-decoration: none; color:#0052E2;">support@craftingemails.com</a></td>
-			</tr>		 -->
-		</table>		
+		</tr>
+	</tbody>
+</table>
+<!--FOOTER-->
+<table width="560" cellpadding="0" cellspacing="0" align="center" style="padding-top: 16px; border-top-color: #EDEDF2; border-top-style: solid; border-top-width: 1px;"  class="device-inner">
+<tbody>
+<tr>
+	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;line-height: 16px; color: #8492A6;">
+		This email was sent to you as a registered member of <a href="https://craftingemails.com" style="text-decoration: none; color:#0052E2;">craftingemails.com</a>. To update your emails preferences <a href="https://craftingemails.com" style="text-decoration: none; color:#0052E2;">click here</a>.Use of the service and website is subject to our <a href="https://craftingemails.com" style="text-decoration: none; color:#0052E2;">Terms of Use</a> and <a href="https://craftingemails.com" style="text-decoration: none; color:#0052E2;">Privacy Statement</a>.
+	</td>
+</tr>
+</tbody>
+</table>
+<table  width="560" cellpadding="0" cellspacing="0" align="center" style="padding-top: 22px;"  class="device-inner">
+<tbody>
+<tr>
+	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;line-height: 16px; color: #8492A6;padding-bottom: 30px;">© 2019 Craftingemails. All rights reserved</td>
+</tr>
+</tbody>
+</table>
+								</td>
+								</tr>
+							</tbody>							
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+<!--horizontal line separate-->
+<hr width="90%" color="purple" align="center" size="5">
+<!--pricing email-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Coupon Email Template</title>
+		<style>
+			body {
+				padding:0;
+				margin: 0;
+				width: 100%!important;
+				-webkit-text-size-adjust: 100%;
+				-ms-text-size-adjust: 100%;
+			}
+			@media only screen and (max-width: 760px) {
+				table[class=device-width] {
+					width: 440px!important;
+				}
+				table[class=device-inner] {
+					width: 400px!important;
+				}		
+				table[class=device-border] {
+					width: 400px!important;
+					border-right-width: 0!important;
+					padding-right: 15px!important;
+					padding-left: 15px!important;
+					text-align: center!important;
+				}	
+			}
+			@media only screen and (max-width: 500px) {
+				table[class=device-width] {
+					width: 300px!important;
+				}
+				table[class=device-inner] {
+					width: 280px!important;
+				}		
+				table[class=device-border] {
+					width: 280px!important;
+					border-right-width: 0!important;
+					padding-right: 0!important;
+					padding-left: 0!important;
+					text-align: center!important;
+				}
+				table[class=td-hide] {
+					display: none!important;
+					visibility: collapse!important;
+				}
+			}
+		</style>
+	</head>
+	<body>
+				<table border="0" cellpadding="0" cellspacing="0" bgcolor="#F2F2F2" width="100%">
+			<tbody>
+				<tr>
+					<td width="100%">
+						<table width="680px" bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" align="center" class="device-width">
+							<tbody>
+								<tr>
+									<td>
+									<!--logo-сделала align="center" у таблицы чтобы встало прямо по центру, td не работает почему-то-->
+										<table width="560px" cellspacing="0" cellpadding="0" border="0"  align="center" class="device-inner">
+											<tbody>
+												<tr>
+													<td align="center" style="padding-top: 43px; padding-bottom: 24px;">
+														<img src="/Users/anastasia/Desktop/email/img/logo.png" alt="logo" width="100%" align="center" style="max-width: 143px;">
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									<!--title-сделала align="center" у таблицы чтобы встало прямо по центру, td не работает почему-то-->
+										<table width="560px" cellspacing="0" cellpadding="0" border="0"  align="center" class="device-inner">
+											<tbody>
+												<tr>
+													<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 21px;font-weight: 400;  line-height: 28px; color: #4A5566; padding: 20px; padding-bottom: 16px;">Hi Candy 👋<br>Upgrade in less than 30 seconds. <br>Try out our 7 day risk free trial.</td>
+												</tr>
+											</tbody>
+										</table>
+
+					<!--TEXT UNDER COUPON-->
+					<table width="560" cellpadding="0" cellspacing="0" align="center" class="device-inner" style="outline: orange dotted 1px">
+						<tbody>
+							<tr>
+								<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;line-height: 22px; color: #8492A6;padding-top:24px; padding-bottom: 24px">Bill monthly
+								</td>
+							<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;line-height: 22px; color: #8492A6;padding-top:24px; padding-bottom: 24px">Bill monthly
+								</td>							
+								<td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;line-height: 22px; color: #8492A6;padding-top:24px; padding-bottom: 24px">Bill yearly
+								</td>							
+							</tr>
+						</tbody>
+					</table>
+									<!--3 prices columns-->
+									<table width="580px" cellspacing="0" cellpadding="0" border="0"  align="center" bgcolor="#ffffff"  style= "padding-top: 24px; padding-bottom: 24px; outline: indigo dotted 2px" class="device-inner">
+										<tbody>
+											<tr>
+												<td>
+													<table width="560" align="center" cellspacing="0" cellpadding="0" border="0" class="device-inner">
+														<tbody>
+															<tr>
+																<td>
+																	<!--column LEFT-->
+																	<table height="auto"  width="176" cellspacing="0" cellpadding="0" align="left"  style="text-align: center; outline: #E1E1EA solid 2px;margin-right: 16px;border-radius: 44px; " class="device-border">
+																	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 21px;font-weight: bold;  line-height: 28px; color: #4A5566;padding:20px;padding-bottom: 24px;">Basic</td>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Storage 2 GB</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Anywhere access</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Smart Sync</td></tr>
+																	<tr class="td-hide"><td class="td-hide" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">&mdash;</td></tr>
+																	<tr><td class="td-hide" style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">&mdash;</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;font-weight: bold;  line-height: 30px; color:#4A5566; padding-bottom: 24px;">$0</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;font-weight: 400;  line-height: 16px; color: #8492A6; padding-bottom: 24px;">user / month</td></tr>
+																	<tr><td style=" padding-bottom: 24px">
+																		<a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;font-weight: bold;  line-height: 48px; color: #4A5566; background: #0052E2; border-radius: 4px;color: #ffffff; text-decoration: none;height: 48px;display: inline-block;padding-right: 32px; padding-left: 32px;">Get started</a>
+																	</td></tr>
+																</table>				
+			<!---column center--->
+																	<table height="auto"  width="176" cellspacing="0" cellpadding="0" align="left"  style="text-align: center; margin-right: 16px; outline: #E1E1EA solid 2px" class="device-border">
+																	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 21px;font-weight: bold;  line-height: 28px; color: #4A5566;padding:20px;padding-bottom: 24px;">Premium</td>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Unlimited</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Anywhere access</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Smart Sync</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Device approvals</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">&mdash;</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;font-weight: bold;  line-height: 30px; color:#4A5566; padding-bottom: 24px;">$19</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;font-weight: 400;  line-height: 16px; color: #8492A6; padding-bottom: 24px;">user / month</td></tr>
+																	<tr><td style=" padding-bottom: 24px">
+																		<a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;font-weight: bold;  line-height: 48px; color: #4A5566; background: #0052E2; border-radius: 4px;color: #ffffff; text-decoration: none;height: 48px;display: inline-block;padding-right: 32px; padding-left: 32px;">Get started</a>
+																	</td></tr>
+																</table>
+
+<!--COLUMN RIGHT-->
+<!-- <table width="16" height="16" cellpadding="0" cellspacing="0" border="0" style="outline: red dotted 1px"><tbody><tr><td></td></tr></tbody></table> -->
+																	<table height="auto"  width="176" cellspacing="0" cellpadding="0" align="left"  style="text-align: center; outline: #E1E1EA solid 2px" class="device-border">
+																	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 21px;font-weight: bold;  line-height: 28px; color: #4A5566;padding:20px;padding-bottom: 24px;">Ultimate</td>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Unlimited</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Anywhere access</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Smart Sync</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">Device approvals</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;font-weight: 400;  line-height: 22px; color: #8492A6; padding-bottom: 24px;">File requests</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 28px;font-weight: bold;  line-height: 30px; color:#4A5566; padding-bottom: 24px;">$39</td></tr>
+																	<tr><td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;font-weight: 400;  line-height: 16px; color: #8492A6; padding-bottom: 24px;">user / month</td></tr>
+																	<tr><td style=" padding-bottom: 24px">
+																		<a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;font-weight: bold;  line-height: 48px; color: #4A5566; background: #0052E2; border-radius: 4px;color: #ffffff; text-decoration: none;height: 48px;display: inline-block;padding-right: 32px; padding-left: 32px;">Get started</a>
+																	</td></tr>
+																</table>
+<!--space between columns-->
+	
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+<!--EMPTY SPACE-->
+<table height="64" width="560" cellpadding="0" cellspacing="0" align="center" class="device-inner">
+	<tbody>
+<tr>
+	<td></td>
+</tr>
+</tbody>
+</table>
+<!--FOOTER-->
+<table width="560" cellpadding="0" cellspacing="0" align="center" style="padding-top: 16px; border-top-color: #EDEDF2; border-top-style: solid; border-top-width: 1px;"  class="device-inner">
+<tbody>
+<tr>
+	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;line-height: 16px; color: #8492A6;">
+		This email was sent to you as a registered member of <a href="https://craftingemails.com" style="text-decoration: none; color:#0052E2;">craftingemails.com</a>. To update your emails preferences <a href="https://craftingemails.com" style="text-decoration: none; color:#0052E2;">click here</a>.Use of the service and website is subject to our <a href="https://craftingemails.com" style="text-decoration: none; color:#0052E2;">Terms of Use</a> and <a href="https://craftingemails.com" style="text-decoration: none; color:#0052E2;">Privacy Statement</a>.
+	</td>
+</tr>
+</tbody>
+</table>
+<table  width="560" cellpadding="0" cellspacing="0" align="center" style="padding-top: 22px;"  class="device-inner">
+<tbody>
+<tr>
+	<td style="font-family: Arial, Helvetica, sans-serif; font-size: 12px;line-height: 16px; color: #8492A6;padding-bottom: 30px;">© 2019 Craftingemails. All rights reserved</td>
+</tr>
+</tbody>
+</table>
+								</td>
+								</tr>
+							</tbody>							
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
 	</body>
-</html>
+	</html>
+
+<hr>
